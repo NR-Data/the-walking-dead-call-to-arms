@@ -1,0 +1,387 @@
+{
+  "catalogue": {
+    "name": "Scavengers",
+    "id": "17cb-b3ab-129e-6d0a",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "f046-8736-7a7e-93d7",
+    "gameSystemRevision": 2,
+    "library": false,
+    "revision": 2,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "selectionEntries": [
+      {
+        "name": "Group Special Rules",
+        "id": "928e-764a-7b21-761b",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "bd63-997d-defb-7a5c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "5856-1995-efd8-9455",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 0}],
+        "rules": [
+          {
+            "name": "Loot and Pillage",
+            "id": "15cf-10a7-1a4c-47d3",
+            "description": "Each time a Scavengers model or friendly Follower performs the Scavenge Action, roll 1Black. On a Shield, gain 1 bonus Victory Point.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Derek",
+        "id": "db9c-8a0d-ea7b-c880",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "69fa-0ef8-ff01-c062", "hidden": false, "primary": true, "targetId": "1632-3305-8ec4-ecf2"},
+          {"name": "Alignment: Ruthless", "id": "3052-ac2d-d78b-82c1", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "Scavengers", "id": "4b79-cd35-5d35-975b", "hidden": false, "primary": false, "targetId": "604d-5476-6363-ee71"}
+        ],
+        "constraints": [
+          {
+            "id": "51e6-8a73-812a-5c03",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 50}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "1f4b-00e1-8f96-f067",
+            "collective": false,
+            "hidden": false,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "ceae-026c-032c-5f37",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Derek",
+            "id": "a81c-29b2-925c-bc8a",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Bruiser", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "2Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1White", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White,1Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "5", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "2Red/1Red", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Survival of the Fittest",
+            "id": "117d-eec0-f29d-8c00",
+            "description": "Whenever a Walker would move into contact with Derek, first check to see if there is a friendly model in his Kill Zone with 3 or less Health remaining. If it is possible for the Walker to reach that model, Derek may redirect the Walker into contact with the new target.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "6c41-e08d-a3a2-be49",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "f474-eaf6-d318-6523",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 50
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "3bbc-7222-5c8d-5eda", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {"name": "Melee Weapons", "id": "664f-6bf3-73f8-e025", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {
+                "name": "Ranged Weapons",
+                "id": "4045-0c2d-71d3-83c0",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "95c4-21b8-e653-245d",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Special Items", "id": "a111-9de0-ca5b-009f", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "Browning Hi-Power",
+                "id": "95c4-21b8-e653-245d",
+                "collective": false,
+                "hidden": false,
+                "targetId": "577e-ffd8-55b8-147e",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "809e-93c3-ffda-fb23",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "809e-93c3-ffda-fb23",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "4045-0c2d-71d3-83c0",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Carlos",
+        "id": "4e80-ca37-4919-7620",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "04e6-69b3-3373-b7b0", "hidden": false, "primary": true, "targetId": "7e4f-cf68-74a3-b58a"},
+          {"name": "Alignment: Ruthless", "id": "9ace-74fe-43bc-2558", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "Scavengers", "id": "7b88-10c3-0088-3a0c", "hidden": false, "primary": false, "targetId": "604d-5476-6363-ee71"}
+        ],
+        "constraints": [
+          {
+            "id": "fe62-dba0-2457-04d9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 44}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "4c51-7d62-f811-b13f",
+            "collective": false,
+            "hidden": false,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "5e8c-9372-bd35-2140",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Carlos",
+            "id": "b746-15c0-47da-07a0",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Marksman", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1White", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1Red,1Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "5", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X/-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "7be1-a711-8515-a6f0",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "e08e-7e13-d535-3c34",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 44
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "eaf5-7311-43fc-baa0", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {"name": "Melee Weapons", "id": "343c-f932-a9ed-66f2", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {
+                "name": "Ranged Weapons",
+                "id": "c0b1-8944-ef55-191b",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "645e-43c7-ae6e-af06",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Special Items", "id": "2c98-8b3d-33c0-348c", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "Arctic Warfare Sniper Rifle",
+                "id": "645e-43c7-ae6e-af06",
+                "collective": false,
+                "hidden": false,
+                "targetId": "37ea-4bc5-5b66-4f28",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "a6e6-d83c-c64a-fabc",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "a6e6-d83c-c64a-fabc",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "c0b1-8944-ef55-191b",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

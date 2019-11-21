@@ -1,0 +1,1829 @@
+{
+  "catalogue": {
+    "name": "Woodbury Army",
+    "id": "ae13-91e9-632e-a903",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "f046-8736-7a7e-93d7",
+    "gameSystemRevision": 2,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "selectionEntries": [
+      {
+        "name": "Group Special Rules",
+        "id": "1ae9-f700-f030-3872",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6723-c87b-6e19-5f49",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "91d8-5426-a6a2-94e1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 0}],
+        "rules": [
+          {
+            "name": "Conscript Militia",
+            "id": "e394-634c-2e89-d8f9",
+            "description": "Models with the Woodbury Commander keyword, and friendly Woodbury Army models within 3” of them, may spend 1SP to add 1Red to a Ranged Attack roll. However, if a Woodbury Army model begins its activation more than 3” from a Woodbury Commander, it loses 1 Action.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Brian Blake, The Governor",
+        "id": "ca57-595d-9ed6-ff1c",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "1e2d-2262-5594-74ac", "hidden": false, "primary": true, "targetId": "b33e-e6d0-05ba-26ce"},
+          {"name": "Alignment: Ruthless", "id": "e2b2-e2b3-bf85-6ffe", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "Woodbury Army", "id": "1238-4e34-9f30-1d74", "hidden": false, "primary": false, "targetId": "80ce-410c-b879-c6db"},
+          {"name": "Brian Blake", "id": "8ec9-6975-508f-9f1b", "hidden": false, "primary": false, "targetId": "4f9c-b8ab-51b9-6beb"}
+        ],
+        "constraints": [
+          {
+            "id": "1fc4-e43f-67a0-cbef",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 68}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "5358-9f5a-31b3-5c15",
+            "collective": false,
+            "hidden": false,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "f72f-01a3-12ba-c675",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "infoLinks": [{"name": "Boss", "id": "fbc3-9940-cd80-0fcf", "hidden": false, "targetId": "4bcf-b79d-278c-0223", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Brian Blake",
+            "id": "c623-91a9-7403-774a",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Tactician", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1White,1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1White", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1Blue", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "7", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "2Red/1Red", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {"name": "Woodbury Commander", "id": "896e-dee7-b713-42ce", "hidden": false},
+          {
+            "name": "Do As I Say! (Special Order)",
+            "id": "d9b8-a02b-d0bd-b6c2",
+            "description": "The Governor may spend 1SP to perform a single Action with a friendly model within 6”, even if the target model has already activated this round, and has already performed the same Action. It does not use an Action from either model. When this bonus Action is complete, play reverts back to the Governor (if he has any Actions remaining).",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "8fd8-06d1-d50c-e08e",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "b0d5-6292-c400-cc98",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 68
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "f6bf-1853-a622-457e", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {
+                "name": "Melee Weapons",
+                "id": "6da0-ad8c-e59c-e2a9",
+                "collective": false,
+                "hidden": false,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "3eca-6488-e35e-fb87",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "43c6-e7f6-3da2-9bac",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "f4c6-e9c7-19d4-db30",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Special Items", "id": "0145-6aa2-a009-efd7", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "Beretta 92",
+                "id": "f4c6-e9c7-19d4-db30",
+                "collective": false,
+                "hidden": false,
+                "targetId": "c2f9-298d-8cac-dc94",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "e7b1-125f-a1fa-a57b",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "e7b1-125f-a1fa-a57b",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "43c6-e7f6-3da2-9bac",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Knife",
+                "id": "3eca-6488-e35e-fb87",
+                "collective": false,
+                "hidden": false,
+                "targetId": "e1c4-2bd3-01d3-0fdd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "3d87-68a8-d7c0-8ec3",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "3d87-68a8-d7c0-8ec3",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "6da0-ad8c-e59c-e2a9",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Brian Blake, Mutilated and Merciless",
+        "id": "8f19-1fdf-9850-21ad",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "c1dd-63f6-1309-9a70", "hidden": false, "primary": true, "targetId": "4eb2-d49f-4b22-dd86"},
+          {"name": "Alignment: Ruthless", "id": "7d7a-198b-a1a0-2894", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "Woodbury Army", "id": "6c8b-18ee-eae8-9b51", "hidden": false, "primary": false, "targetId": "80ce-410c-b879-c6db"},
+          {"name": "Brian Blake", "id": "c4f1-812f-ef68-4ab1", "hidden": false, "primary": false, "targetId": "4f9c-b8ab-51b9-6beb"}
+        ],
+        "constraints": [
+          {
+            "id": "97e6-a287-8ff5-4272",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 65}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "ade9-76a6-3ec8-c3dd",
+            "collective": false,
+            "hidden": false,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "df0b-7d1a-bbad-5194",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "infoLinks": [
+          {"name": "One-Handed", "id": "f8ea-698f-a1b8-6157", "hidden": false, "targetId": "d3b5-d51d-e0e2-98f8", "type": "rule"},
+          {"name": "Boss", "id": "cda8-f333-5df2-c84e", "hidden": false, "targetId": "4bcf-b79d-278c-0223", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Brian Blake",
+            "id": "f278-dfbf-ccef-9497",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Support", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1White", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1White", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1Blue", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "6", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "1White/-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {"name": "Woodbury Commander", "id": "c16b-ad33-7e2a-19e0", "hidden": false},
+          {
+            "name": "Kill Them All! (Special Order, One Use)",
+            "id": "7c31-b370-fb50-07b0",
+            "description": "Spend 1SP and create NOISE. Brian Blake and every friendly Woodbury Army model within 6” add 1Red to their attack rolls (any type) for the remainder of the turn.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "2c10-288f-c4fa-d698",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "71f7-7572-93d6-5435",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 65
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Armor",
+                "id": "f5db-4fe1-733c-f75d",
+                "collective": false,
+                "hidden": false,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "ec3d-4a63-9fa9-c35f",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "a90d-63b9-e6ab-0406",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Melee Weapons",
+                "id": "7d39-5a0b-66f1-6d49",
+                "collective": false,
+                "hidden": false,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "df75-0398-a51d-9b6b",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "4c7e-9be6-a355-80ea",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "6a5c-b2ad-623d-1279",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Special Items",
+                "id": "3cb6-35dc-5c5f-18bb",
+                "collective": false,
+                "hidden": false,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "9a7f-457e-7197-5f45",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "edf3-534d-d88f-8eac",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Beretta 92",
+                "id": "6a5c-b2ad-623d-1279",
+                "collective": false,
+                "hidden": false,
+                "targetId": "c2f9-298d-8cac-dc94",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "71d9-c8cb-4ddd-9516",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "71d9-c8cb-4ddd-9516",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "4c7e-9be6-a355-80ea",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Riot Gear",
+                "id": "a90d-63b9-e6ab-0406",
+                "collective": false,
+                "hidden": false,
+                "targetId": "1672-3925-3d1b-4808",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "cf2f-84a0-caff-050b",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "cf2f-84a0-caff-050b",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "f5db-4fe1-733c-f75d",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Riot Baton",
+                "id": "df75-0398-a51d-9b6b",
+                "collective": false,
+                "hidden": false,
+                "targetId": "c400-4b83-38d2-fe71",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "c6e5-dc36-d1fd-9138",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "c6e5-dc36-d1fd-9138",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "7d39-5a0b-66f1-6d49",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "The Governor's Megaphone",
+                "id": "edf3-534d-d88f-8eac",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "f91e-6b45-d62f-94d6",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 10}],
+                "modifiers": [
+                  {
+                    "field": "f91e-6b45-d62f-94d6",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "3cb6-35dc-5c5f-18bb",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "The Governor's Megaphone",
+                    "id": "c451-c401-616b-b421",
+                    "hidden": false,
+                    "typeId": "ba75-8ed9-edc3-b7f6",
+                    "typeName": "Special Items",
+                    "characteristics": [
+                      {
+                        "name": "Special Rules",
+                        "$text": "Brian Blake, Mutilated and Merciless Only. Brian may use this item to increase the range of his Kill them All! Special Order to 12”, creating MAYHEM instead of NOISE.",
+                        "typeId": "f83f-be9f-fcc5-abf5"
+                      },
+                      {"name": "Keywords", "typeId": "4d62-b2c0-a0c7-0a18"},
+                      {"name": "Noise / Mayhem", "typeId": "589a-5fe7-b416-6918"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Brian Blake, Trophy Collector",
+        "id": "754f-0165-4289-8c03",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "9d34-90b2-359e-1f17", "hidden": false, "primary": true, "targetId": "b33e-e6d0-05ba-26ce"},
+          {"name": "Alignment: Ruthless", "id": "3576-ad08-f375-6c08", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "Woodbury Army", "id": "b9f9-c8d6-c581-d9c5", "hidden": false, "primary": false, "targetId": "80ce-410c-b879-c6db"},
+          {"name": "Brian Blake", "id": "5d42-049d-57a1-f2e0", "hidden": false, "primary": false, "targetId": "4f9c-b8ab-51b9-6beb"}
+        ],
+        "constraints": [
+          {
+            "id": "0ee8-4377-b09e-5b27",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 65}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "2ac7-eeaa-237e-a31e",
+            "collective": false,
+            "hidden": false,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "ae0c-1729-6451-b84d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "infoLinks": [{"name": "Boss", "id": "cccb-b2e9-ac8c-e027", "hidden": false, "targetId": "4bcf-b79d-278c-0223", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Brian Blake",
+            "id": "f08d-695c-5baf-c09e",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Tactician", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1White,1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1White", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1Blue", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "7", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "2Red/1Red", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {"name": "Woodbury Commander", "id": "399d-2004-97e7-e095", "hidden": false},
+          {
+            "name": "Trophy Hunter",
+            "id": "1935-c48d-0fa9-97a9",
+            "description": "If Brian Blake kills an enemy Survivor in melee without causing a Headshot, do not replace the enemy with a Prone Walker. Instead, remove the model from play and gain 1 bonus Victory Point.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "bdc3-69a7-e35f-8043",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "0483-d360-455b-72cd",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 65
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "9260-2d63-5622-4d85", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {"name": "Melee Weapons", "id": "0d6a-b740-5bc5-ebb9", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {
+                "name": "Ranged Weapons",
+                "id": "a797-ca7d-4460-4752",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "1efa-ba60-144b-8b4f",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Special Items", "id": "0f35-d9e7-0f64-60ca", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "Beretta 92",
+                "id": "1efa-ba60-144b-8b4f",
+                "collective": false,
+                "hidden": false,
+                "targetId": "c2f9-298d-8cac-dc94",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "a386-58cd-10ae-6ebe",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "a386-58cd-10ae-6ebe",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "a797-ca7d-4460-4752",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gabe Harris",
+        "id": "d06d-9872-3119-ae1e",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "8d29-9238-5a4c-bfcc", "hidden": false, "primary": true, "targetId": "4eb2-d49f-4b22-dd86"},
+          {"name": "Alignment: Ruthless", "id": "f608-2bd8-286a-906c", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "Woodbury Army", "id": "28ee-0a5d-ddd0-4f5c", "hidden": false, "primary": false, "targetId": "80ce-410c-b879-c6db"}
+        ],
+        "constraints": [
+          {
+            "id": "b1ac-4cbd-59f8-980b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 40}],
+        "entryLinks": [{"name": "Leader", "id": "3948-77e5-c1d5-e0d4", "collective": false, "hidden": false, "targetId": "2bee-5b46-6bef-8581", "type": "selectionEntry"}],
+        "profiles": [
+          {
+            "name": "Gabe Harris",
+            "id": "f1c8-ea07-97a5-8c02",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Support", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "2Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1White", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White,1Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "6", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "1Red/-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {"name": "Woodbury Commander", "id": "343a-a329-9919-401e", "hidden": false},
+          {"name": "Out of Shape", "id": "4e29-d8e1-ea31-b574", "description": "Gabe can only Sneak 3” and run 6”.", "hidden": false}
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "9287-b812-ab5f-fb32",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "7193-a4cc-7d20-2d01",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 40
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "9mm Pistol",
+                "id": "2386-6727-e915-c85c",
+                "collective": false,
+                "hidden": false,
+                "targetId": "329b-bd83-bbe9-bd52",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "075e-2688-b826-65ca",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "075e-2688-b826-65ca",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "a383-4ebf-738e-1f3e",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Special Items", "id": "45e0-1e94-5377-b4cd", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "Ranged Weapons",
+                "id": "a383-4ebf-738e-1f3e",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "2386-6727-e915-c85c",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Melee Weapons", "id": "7afa-2d20-924c-4553", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {"name": "Armor", "id": "b78f-b98e-8b54-22b3", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bruce Cooper",
+        "id": "d5cf-7c95-6ca2-989b",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "962b-e50d-66fd-a0d3", "hidden": false, "primary": true, "targetId": "1632-3305-8ec4-ecf2"},
+          {"name": "Alignment: Ruthless", "id": "fcc8-c830-3ec4-ea0d", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "Woodbury Army", "id": "7c4e-c776-d2fb-b2eb", "hidden": false, "primary": false, "targetId": "80ce-410c-b879-c6db"}
+        ],
+        "constraints": [
+          {
+            "id": "a2cf-00c3-e1dd-13fe",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 44}],
+        "entryLinks": [{"name": "Leader", "id": "29eb-c88a-e171-0ae6", "collective": false, "hidden": false, "targetId": "2bee-5b46-6bef-8581", "type": "selectionEntry"}],
+        "infoLinks": [{"name": "Bodyguard (X)", "id": "eb1c-4b0d-bc7d-3a75", "hidden": false, "targetId": "b835-4f78-3c0a-5dee", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Bruce Cooper",
+            "id": "d079-142a-5020-1576",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Bruiser", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Blue", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "2Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "6", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "1Red/-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {"name": "Woodbury Commander", "id": "f2dd-af4a-d720-d49d", "hidden": false},
+          {"name": "Bodyguard (Brian Blake)", "id": "b060-f908-94f3-4bd2", "hidden": false}
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "10c8-eec7-57be-3846",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "adf0-4a22-b83b-c52f",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 44
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "cfc3-fb27-0ae7-41ff", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {"name": "Melee Weapons", "id": "042f-76f8-c8e4-d8b5", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {
+                "name": "Ranged Weapons",
+                "id": "3728-03d5-4f42-17c6",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "940e-4b5a-749f-3985",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Special Items", "id": "86ce-e863-f83e-9f3b", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "M4 Carbine",
+                "id": "940e-4b5a-749f-3985",
+                "collective": false,
+                "hidden": false,
+                "targetId": "b817-8f91-f299-f1de",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "85f6-ad24-624e-e3b5",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "85f6-ad24-624e-e3b5",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "3728-03d5-4f42-17c6",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Martinez",
+        "id": "ca9e-b247-f354-f3b2",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "e27b-4104-0db9-40fa", "hidden": false, "primary": true, "targetId": "7e4f-cf68-74a3-b58a"},
+          {"name": "Woodbury Army", "id": "4a12-0adf-9060-877d", "hidden": false, "primary": false, "targetId": "80ce-410c-b879-c6db"},
+          {"name": "Alignment: Neutral", "id": "24ec-f2c4-0f8a-5d5d", "hidden": false, "primary": false, "targetId": "a184-b0a1-ca0d-b36f"}
+        ],
+        "constraints": [
+          {
+            "id": "c84b-40eb-b07c-9553",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 48}],
+        "entryLinks": [{"name": "Leader", "id": "ce99-4e99-4cf2-fa24", "collective": false, "hidden": false, "targetId": "2bee-5b46-6bef-8581", "type": "selectionEntry"}],
+        "profiles": [
+          {
+            "name": "Martinez",
+            "id": "279c-e95d-134e-df91",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Marksman", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1White", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1White,1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "5", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "1Red/1Red", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Woodbury Commander", "id": "add8-b7ab-cd67-05cf", "hidden": false}],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "d48d-9fcb-f86b-d8bb",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "12be-dc05-690e-8c61",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 48
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "7622-4e8b-3a65-f6e3", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {"name": "Melee Weapons", "id": "1f77-19cd-5ce5-0581", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {
+                "name": "Ranged Weapons",
+                "id": "a7fb-a161-4cee-4355",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "bfcf-b0d9-9855-5dd3",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Special Items", "id": "561b-8567-73ae-b59c", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "Browning Hunting Rifle",
+                "id": "bfcf-b0d9-9855-5dd3",
+                "collective": false,
+                "hidden": false,
+                "targetId": "3401-aa6d-f643-de6d",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "ea69-2b22-a13c-eb08",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "ea69-2b22-a13c-eb08",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "a7fb-a161-4cee-4355",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Knife",
+                "id": "9acc-0f8e-2ada-1710",
+                "collective": false,
+                "hidden": false,
+                "targetId": "e1c4-2bd3-01d3-0fdd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "e5a5-3edf-39e2-03d8",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "e5a5-3edf-39e2-03d8",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "1f77-19cd-5ce5-0581",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gloria",
+        "id": "960a-3273-89f9-54a1",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "9c58-235e-8e81-b4e8", "hidden": false, "primary": true, "targetId": "b33e-e6d0-05ba-26ce"},
+          {"name": "Woodbury Army", "id": "6195-a74b-57a9-6b8f", "hidden": false, "primary": false, "targetId": "80ce-410c-b879-c6db"},
+          {"name": "Alignment: Neutral", "id": "543c-a4b8-65a0-d52d", "hidden": false, "primary": false, "targetId": "a184-b0a1-ca0d-b36f"}
+        ],
+        "constraints": [
+          {
+            "id": "f536-b2d5-4487-437f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 42}],
+        "entryLinks": [{"name": "Leader", "id": "388b-8343-4ea0-04ce", "collective": false, "hidden": false, "targetId": "2bee-5b46-6bef-8581", "type": "selectionEntry"}],
+        "profiles": [
+          {
+            "name": "Gloria",
+            "id": "e62a-904c-59ae-db9b",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Tactician", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1White", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1White", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1Blue", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "5", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "1White/1Red", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Up Close and Personal",
+            "id": "07ba-00d4-b501-c941",
+            "description": "When using a weapon with the Handgun keyword in melee, Gloria adds 1Red to her attack rolls.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "13ff-bb87-4ad2-87d6",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "b1fe-e0dd-f628-a85c",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 42
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "55ce-28c7-5d18-94c6", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {"name": "Melee Weapons", "id": "9e3a-e8a1-f250-288d", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {
+                "name": "Ranged Weapons",
+                "id": "55c2-06bf-ffdb-cf8d",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "a677-570e-e240-14ad",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Special Items", "id": "07c3-e4ed-7d3a-2a18", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "9mm Pistol",
+                "id": "a677-570e-e240-14ad",
+                "collective": false,
+                "hidden": false,
+                "targetId": "329b-bd83-bbe9-bd52",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "8d1f-41e2-bc00-ae3f",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "8d1f-41e2-bc00-ae3f",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "55c2-06bf-ffdb-cf8d",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lilly",
+        "id": "8402-d2dd-d5c2-aeae",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "3d96-6213-91b5-88b5", "hidden": false, "primary": true, "targetId": "7e4f-cf68-74a3-b58a"},
+          {"name": "Woodbury Army", "id": "614e-0c8d-878d-6bbe", "hidden": false, "primary": false, "targetId": "80ce-410c-b879-c6db"},
+          {"name": "Alignment: Neutral", "id": "0a9f-ab6e-b3fd-e5c7", "hidden": false, "primary": false, "targetId": "a184-b0a1-ca0d-b36f"}
+        ],
+        "constraints": [
+          {
+            "id": "30c5-806a-8fd4-6327",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 42}],
+        "entryLinks": [{"name": "Leader", "id": "12b8-d9e4-47e5-347f", "collective": false, "hidden": false, "targetId": "2bee-5b46-6bef-8581", "type": "selectionEntry"}],
+        "profiles": [
+          {
+            "name": "Lilly",
+            "id": "ff33-b27e-b313-4195",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Marksman", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1White", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "4", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "1White/1Red", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Cunning (Strategy)",
+            "id": "bcd2-15de-00ea-1ab1",
+            "description": "Lilly may spend 1SP to add one bonus 1White to either her Melee, Shoot or Defense until the end of the round.",
+            "hidden": false
+          },
+          {
+            "name": "Relunctant Leader",
+            "id": "e7ff-6c05-62fa-ddff",
+            "description": "If Lilly begins her activation 10\" or more from a friendly Woodbury Commander, she gains the Woodbury Commander keyword until the end of the round.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "16fd-9b62-46f9-fd52",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "d696-70da-52e9-1dca",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 42
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "2c05-0bab-6580-6ea5", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {"name": "Melee Weapons", "id": "9258-5d27-a42d-face", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {
+                "name": "Ranged Weapons",
+                "id": "c2f1-28aa-1ac8-25fd",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "c2f1-28aa-1ac8-25fd",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Special Items", "id": "ee50-9ae0-6a81-ba06", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "Knife",
+                "id": "3711-6e5e-02d5-dd4a",
+                "collective": false,
+                "hidden": false,
+                "targetId": "e1c4-2bd3-01d3-0fdd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "7bb7-3d66-725f-317a",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "7bb7-3d66-725f-317a",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "9258-5d27-a42d-face",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Remington 700",
+                "id": "7111-bbcf-6053-7ce3",
+                "collective": false,
+                "hidden": false,
+                "targetId": "e691-b73f-a4bf-d20e",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "0a72-00fa-d82d-94f9",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "0a72-00fa-d82d-94f9",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "c2f1-28aa-1ac8-25fd",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wes",
+        "id": "3a27-c0e7-c4da-2cfc",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "9452-0a69-335d-a639", "hidden": false, "primary": true, "targetId": "1632-3305-8ec4-ecf2"},
+          {"name": "Alignment: Ruthless", "id": "5495-aba7-5a40-dedb", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "Woodbury Army", "id": "f67e-a7bc-faca-8920", "hidden": false, "primary": false, "targetId": "80ce-410c-b879-c6db"}
+        ],
+        "constraints": [
+          {
+            "id": "ea6f-5882-3699-fe96",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 32}],
+        "entryLinks": [{"name": "Leader", "id": "18cc-32ed-34fb-2099", "collective": false, "hidden": false, "targetId": "2bee-5b46-6bef-8581", "type": "selectionEntry"}],
+        "infoLinks": [{"name": "Bodyguard (X)", "id": "d916-9a44-6748-db19", "hidden": false, "targetId": "b835-4f78-3c0a-5dee", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Wes",
+            "id": "34f2-e8f7-662f-f24b",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Bruiser", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1White", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White,1Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "4", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X/-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Bodyguard (Martinez)", "id": "87a7-3832-35c1-cda5", "hidden": false}],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "a4f0-c693-f373-813c",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "963c-6311-4d33-abe8",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 30
+              }
+            ],
+            "entryLinks": [
+              {"name": "Special Items", "id": "ac5c-fd82-2b86-5dcb", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "Ranged Weapons",
+                "id": "eae9-55b7-00b3-8a56",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "065a-ba53-6930-e302",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Melee Weapons", "id": "13c2-2325-2d87-f4fe", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {"name": "Armor", "id": "fb10-b389-54eb-950f", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {
+                "name": "M4 Carbine",
+                "id": "065a-ba53-6930-e302",
+                "collective": false,
+                "hidden": false,
+                "targetId": "b817-8f91-f299-f1de",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "bc0d-2b09-78c0-a2ba",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "bc0d-2b09-78c0-a2ba",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "eae9-55b7-00b3-8a56",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1048 @@
+{
+  "catalogue": {
+    "name": "Greene Family",
+    "id": "2134-4b7a-8650-0153",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "f046-8736-7a7e-93d7",
+    "gameSystemRevision": 2,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "selectionEntries": [
+      {
+        "name": "Group Special Rules",
+        "id": "1ae9-f700-f030-3872",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Alignment: Lawful", "id": "f235-e2c7-b69f-2084", "hidden": false, "primary": false, "targetId": "03f7-28fe-397f-08c7"}],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 0}],
+        "rules": [
+          {
+            "name": "Close-Knit",
+            "id": "e394-634c-2e89-d8f9",
+            "description": "Any model from the Greene Family faction may sacrifice one of its Action to give another friendly model from this Faction within their Kill Zone a +1 Action counter.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Hershel Greene, Greene Family Patriarch",
+        "id": "6987-f784-0c6e-25d0",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "3d83-685b-bf0a-9c61", "hidden": false, "primary": true, "targetId": "4eb2-d49f-4b22-dd86"},
+          {"name": "Alignment: Lawful", "id": "8582-cebf-97d9-f95a", "hidden": false, "primary": false, "targetId": "03f7-28fe-397f-08c7"},
+          {"name": "Greene Family", "id": "0eb3-162e-b878-41c1", "hidden": false, "primary": false, "targetId": "9e76-1b82-7d89-1e79"},
+          {"name": "Hershel Greene", "id": "1b16-8bef-5be7-dec8", "hidden": false, "primary": false, "targetId": "4dae-d36e-64fa-e884"}
+        ],
+        "constraints": [
+          {
+            "id": "8e1a-d3b3-3c98-3d5b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 40}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "4c71-b79c-3dfc-7db4",
+            "collective": false,
+            "hidden": false,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "e6cd-ea72-299b-4d23",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Hershel Greene",
+            "id": "90f7-cbe7-45f0-0fd1",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Support", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "2Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "5", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "1White/1White", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {"name": "Greene Family", "id": "d421-9845-ee6f-af56", "hidden": false},
+          {"name": "First Aid", "id": "5624-a789-9b2d-9e90", "description": "Hershel may use Bandages on a friendly model in his Kill Zone.", "hidden": false},
+          {
+            "name": "Look Out For the Family (Special Order)",
+            "id": "0aa1-4138-2d70-ad28",
+            "description": "Hershel may spend 1SP to choose a friendly Greene Family model within 6”. Until the end of the round, the target model adds 1White to its Defense rolls vs Survivors, and 1Blue to its Defense rolls vs Walkers. Friendly Greene Family members cannot score Headshots against Walkers in a turn in which this Special Order is used (Critical rolls still count towards Ammo rolls).",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "fe87-3951-e73c-0eff",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "7565-207c-8ef4-bd59",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 40
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "ab4b-2d9d-2895-7557", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {"name": "Melee Weapons", "id": "0abd-9411-19e5-2999", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {"name": "Ranged Weapons", "id": "7ca3-66b4-5829-5227", "collective": false, "hidden": false, "targetId": "6461-e3e9-6745-0a3b", "type": "selectionEntryGroup"},
+              {
+                "name": "Special Items",
+                "id": "17b9-ceb4-1b25-44ea",
+                "collective": false,
+                "hidden": false,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "9a7f-457e-7197-5f45",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "c648-1884-e502-2543",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Veterinary Bag",
+                "id": "c648-1884-e502-2543",
+                "collective": false,
+                "hidden": false,
+                "targetId": "f82f-6b56-8fb6-67e1",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "c53d-485d-8731-9c62",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "c53d-485d-8731-9c62",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "17b9-ceb4-1b25-44ea",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Maggie Greene, Rebellious Daughter",
+        "id": "c9cd-ad53-a33d-5b44",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "f77f-90da-1cb4-2a09", "hidden": false, "primary": true, "targetId": "b33e-e6d0-05ba-26ce"},
+          {"name": "Alignment: Lawful", "id": "293c-fcfa-0b54-8ae7", "hidden": false, "primary": false, "targetId": "03f7-28fe-397f-08c7"},
+          {"name": "Greene Family", "id": "73f0-2cd8-134a-f716", "hidden": false, "primary": false, "targetId": "9e76-1b82-7d89-1e79"},
+          {"name": "Maggie Rhee", "id": "e13e-281c-2790-2c1f", "hidden": false, "primary": false, "targetId": "f647-3270-c198-4a08"}
+        ],
+        "constraints": [
+          {
+            "id": "76b9-b228-eabf-db6b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 32}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "e33a-c76a-8557-2ffe",
+            "collective": false,
+            "hidden": false,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "0045-2a67-f8f0-0da9",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "infoLinks": [{"name": "Rebellious", "id": "df86-61a9-81bf-109e", "hidden": false, "targetId": "b745-4444-7471-acf1", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Maggie Greene",
+            "id": "71a2-5840-ab58-ef3f",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Tactician", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "2Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "4", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X/1White", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "2e5d-4430-eb63-772d",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "4688-3b84-44fa-fde7",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 32
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "46a1-5e11-5019-7675", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {"name": "Melee Weapons", "id": "ae39-2f10-39e4-454c", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {
+                "name": "Ranged Weapons",
+                "id": "ddd7-3b84-b112-580c",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "4389-9ab3-42c6-8465",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Special Items", "id": "dd96-6e7e-8465-ca29", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "CZ 82",
+                "id": "4389-9ab3-42c6-8465",
+                "collective": false,
+                "hidden": false,
+                "targetId": "cdfb-beb3-1d39-0eeb",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "1812-b777-ec43-d4b8",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "1812-b777-ec43-d4b8",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "ddd7-3b84-b112-580c",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Arnold Greene",
+        "id": "a5f0-f5b0-06e1-c60d",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "7459-6cc1-f70f-8b83", "hidden": false, "primary": true, "targetId": "1632-3305-8ec4-ecf2"},
+          {"name": "Alignment: Lawful", "id": "89b8-e052-6326-0b23", "hidden": false, "primary": false, "targetId": "03f7-28fe-397f-08c7"},
+          {"name": "Greene Family", "id": "d306-bb0a-143c-3e2b", "hidden": false, "primary": false, "targetId": "9e76-1b82-7d89-1e79"}
+        ],
+        "constraints": [
+          {
+            "id": "ff1d-615f-47c8-1af0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 26}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "0f59-87b0-6c50-c172",
+            "collective": false,
+            "hidden": false,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "d3aa-93fe-793e-7481",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Arnold Greene",
+            "id": "d415-b954-c157-0acd",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Bruiser", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1White", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White,1Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "6", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X/-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Haymaker",
+            "id": "8c83-43f2-18d3-564e",
+            "description": "If Arnold attacks in melee without a weapon, his attack gains the Stun keyword.",
+            "hidden": false
+          },
+          {
+            "name": "Protector",
+            "id": "8b5b-7677-430d-fdb1",
+            "description": "If a friendly model from the Greene Family Faction within Arnold’s Kill Zone is targeted by a ranged attack, Arnold may take the attack on their behalf. Arnold becomes the new target, even if he was not initially in range or line of sight.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "b1b2-6dd2-5901-e725",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "e039-b0ec-37b1-b337",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 26
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "38f5-a39b-e7b9-876b", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {"name": "Melee Weapons", "id": "d364-c038-82d8-2468", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {"name": "Ranged Weapons", "id": "c6c1-02e2-b533-db6f", "collective": false, "hidden": false, "targetId": "6461-e3e9-6745-0a3b", "type": "selectionEntryGroup"},
+              {"name": "Special Items", "id": "d7c2-f8f8-2d1b-b178", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lacey Greene",
+        "id": "40db-87e1-8aa5-62d1",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "fbe9-5a2a-901c-f99d", "hidden": false, "primary": true, "targetId": "4eb2-d49f-4b22-dd86"},
+          {"name": "Alignment: Lawful", "id": "c230-c196-e44d-497e", "hidden": false, "primary": false, "targetId": "03f7-28fe-397f-08c7"},
+          {"name": "Greene Family", "id": "90b7-6706-65fc-26a4", "hidden": false, "primary": false, "targetId": "9e76-1b82-7d89-1e79"}
+        ],
+        "constraints": [
+          {
+            "id": "8141-bafc-76d1-a247",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 15}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "920c-1bd6-9a8d-482e",
+            "collective": false,
+            "hidden": false,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "8106-c470-7694-34c9",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Lacey Greene",
+            "id": "5053-0e49-f4b4-8d3d",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Support", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "-", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "3", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X/-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Distract",
+            "id": "aeeb-8152-6aa8-02c6",
+            "description": "When performing the Make NOISE Action, Lacey may choose a point within 6” of herself (not within the Kill Zone of an enemy model) from which to cause the NOISE.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "9cdf-c59e-2923-977a",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "1a8f-c2a0-7406-5059",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 15
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "2131-7e75-b7c7-f2cf", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {
+                "name": "Melee Weapons",
+                "id": "a9db-e99f-5495-f52d",
+                "collective": false,
+                "hidden": false,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "5552-8fbb-52d6-01a5",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Ranged Weapons", "id": "f07c-19c3-de22-402a", "collective": false, "hidden": false, "targetId": "6461-e3e9-6745-0a3b", "type": "selectionEntryGroup"},
+              {"name": "Special Items", "id": "451e-015e-1bde-9098", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "Pitchfork",
+                "id": "5552-8fbb-52d6-01a5",
+                "collective": false,
+                "hidden": false,
+                "targetId": "57e4-4933-c47d-f0e3",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "508d-5986-3437-fd2d",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "508d-5986-3437-fd2d",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "a9db-e99f-5495-f52d",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Susie & Rachel",
+        "id": "20db-7418-5ddb-74be",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "7df1-c822-5359-21be", "hidden": false, "primary": true, "targetId": "4eb2-d49f-4b22-dd86"},
+          {"name": "Alignment: Lawful", "id": "86c2-a3c5-8886-1f53", "hidden": false, "primary": false, "targetId": "03f7-28fe-397f-08c7"},
+          {"name": "Greene Family", "id": "cc9e-3a88-b3de-6c8b", "hidden": false, "primary": false, "targetId": "9e76-1b82-7d89-1e79"}
+        ],
+        "constraints": [
+          {
+            "id": "66b4-152c-b9a5-17e8",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 15}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "292f-b885-2db6-c744",
+            "collective": false,
+            "hidden": false,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "f5ab-132b-6262-e19f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "infoLinks": [{"name": "Just a Kid", "id": "a40a-772f-b390-c20f", "hidden": false, "targetId": "a8a9-88b3-ae80-fee5", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Susie & Rachel",
+            "id": "aeba-6f0e-38eb-1674",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Support", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "-", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "3", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X/-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Split Up!",
+            "id": "204d-7039-8945-2ff9",
+            "description": "Susie & Rachel may spend two Actions instead of one when performing the Scavenge Action, to gain +1 Victory Point.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "2501-0d63-d880-d7a8",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "c878-1afe-5d00-466d",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 15
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "d27d-1153-1bb6-d2d0", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {
+                "name": "Melee Weapons",
+                "id": "959a-6205-8476-4c6a",
+                "collective": false,
+                "hidden": false,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "e681-b727-2247-7ac6",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Ranged Weapons", "id": "66ca-37e4-a210-1142", "collective": false, "hidden": false, "targetId": "6461-e3e9-6745-0a3b", "type": "selectionEntryGroup"},
+              {"name": "Special Items", "id": "a180-7d70-e5e6-d9b5", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "Knife",
+                "id": "e681-b727-2247-7ac6",
+                "collective": false,
+                "hidden": false,
+                "targetId": "e1c4-2bd3-01d3-0fdd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "31a6-dfc6-fe14-f9ff",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "31a6-dfc6-fe14-f9ff",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "959a-6205-8476-4c6a",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Billy Greene",
+        "id": "fd13-f343-8c44-6823",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "c0ae-9cf2-ba58-f574", "hidden": false, "primary": true, "targetId": "7e4f-cf68-74a3-b58a"},
+          {"name": "Alignment: Lawful", "id": "dd70-9a12-829b-a4a0", "hidden": false, "primary": false, "targetId": "03f7-28fe-397f-08c7"},
+          {"name": "Greene Family", "id": "377a-9547-33bd-92af", "hidden": false, "primary": false, "targetId": "9e76-1b82-7d89-1e79"}
+        ],
+        "constraints": [
+          {
+            "id": "873e-9c92-e082-db47",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 46}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "1294-9ec9-6a2f-7834",
+            "collective": false,
+            "hidden": false,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "50c9-7770-652e-0b44",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Billy Greene",
+            "id": "c5b8-d88f-7fc4-dbc1",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Marksman", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Blue", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "4", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X/1Red", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "340f-fb1d-a0a4-4a55",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "aa4d-e27e-35e9-9ee0",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 46
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "a6a0-74fd-6522-b04a", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {
+                "name": "Melee Weapons",
+                "id": "d760-230f-eb38-6d27",
+                "collective": false,
+                "hidden": false,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "ad5a-a7c6-1f64-9c6d",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "504e-00bd-5de6-bd1b",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "ad5a-a7c6-1f64-9c6d",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Special Items", "id": "08f7-e9a3-0dc7-d47f", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "Knife",
+                "id": "5d92-3152-202d-47a7",
+                "collective": false,
+                "hidden": false,
+                "targetId": "e1c4-2bd3-01d3-0fdd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "6842-6a11-1be0-1194",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "6842-6a11-1be0-1194",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "d760-230f-eb38-6d27",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Remington 700",
+                "id": "ad5a-a7c6-1f64-9c6d",
+                "collective": false,
+                "hidden": false,
+                "targetId": "e691-b73f-a4bf-d20e",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "21e2-1b3f-4f94-b4a7",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "21e2-1b3f-4f94-b4a7",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "504e-00bd-5de6-bd1b",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

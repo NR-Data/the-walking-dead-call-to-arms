@@ -1,0 +1,528 @@
+{
+  "catalogue": {
+    "name": "Prisoners",
+    "id": "4f9f-177d-33e2-7ade",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "f046-8736-7a7e-93d7",
+    "gameSystemRevision": 3,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "selectionEntries": [
+      {
+        "name": "Group Special Rules",
+        "id": "928e-764a-7b21-761b",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 0}],
+        "rules": [
+          {
+            "name": "Trust Issues",
+            "id": "e394-634c-2e89-d8f9",
+            "description": "If Prisoners are your Primary Faction, do not roll to see how many Strategy Points you receive in each Strategy phase. Instead, gain 1 SP for every model with the Prisoner keyword still in play. Allies add their Strategy Rating as normal.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Dexter",
+        "id": "caa2-e77f-8008-11b1",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "c8da-57be-a828-4b8a", "hidden": false, "primary": true, "targetId": "1632-3305-8ec4-ecf2"},
+          {"name": "Alignment: Neutral", "id": "665a-2fd3-f94a-98d8", "hidden": false, "primary": false, "targetId": "a184-b0a1-ca0d-b36f"},
+          {"name": "Prisoners", "id": "49be-bddb-1eba-5aeb", "hidden": false, "primary": false, "targetId": "a9fe-f760-9605-75d6"}
+        ],
+        "constraints": [
+          {
+            "id": "0c97-94ce-d13f-0bce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 52}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "2699-4a26-c597-1a3d",
+            "collective": false,
+            "hidden": false,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "121f-f5b2-bf4d-2a50",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Dexter",
+            "id": "fecf-5f37-89e7-e644",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Bruiser", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red,1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1White", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White,1Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "7", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "1Red/-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {"name": "Prisoner", "id": "863d-b705-2ab9-f71d", "hidden": false},
+          {
+            "name": "Top Dog",
+            "id": "8716-f9c1-92e5-c7f2",
+            "description": "Dexter may spend 1SP to roll 1White. He may distribute that many +1 Action counters between friendly models with the Prisoner keyword (including himself).",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "3fca-4c1c-2bef-de45",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "5a06-68bd-e50d-b35e",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 52
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "f8e9-77bd-9bd9-bafd", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {"name": "Melee Weapons", "id": "0c70-51fa-54d3-0827", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {
+                "name": "Ranged Weapons",
+                "id": "1db1-1848-a3b4-4929",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "4c27-7220-6aca-0201",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Special Items", "id": "2f6f-1a12-2418-830e", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "Pump-Action Shotgun",
+                "id": "4c27-7220-6aca-0201",
+                "collective": false,
+                "hidden": false,
+                "targetId": "59cf-6ac8-0f4f-c29b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "2465-2ed6-7a2b-d245",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "2465-2ed6-7a2b-d245",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "1db1-1848-a3b4-4929",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Axel",
+        "id": "b4ca-b867-9a71-0bfe",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "0cbd-ae6c-8afc-6d31", "hidden": false, "primary": true, "targetId": "4eb2-d49f-4b22-dd86"},
+          {"name": "Alignment: Neutral", "id": "c7c7-b846-b02e-6804", "hidden": false, "primary": false, "targetId": "a184-b0a1-ca0d-b36f"},
+          {"name": "Prisoners", "id": "5465-33e6-9e64-c0d9", "hidden": false, "primary": false, "targetId": "a9fe-f760-9605-75d6"}
+        ],
+        "constraints": [
+          {
+            "id": "7b27-7ca8-1fa6-5807",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 34}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "04ad-36e0-6acd-906f",
+            "collective": false,
+            "hidden": false,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "6b8e-155d-3dc0-dcf2",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Axel",
+            "id": "ed4f-d862-7fa0-1949",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Support", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1White", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White,1Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "6", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "-/1Red", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Prisoner", "id": "f706-4842-bf2c-d458", "hidden": false}],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "dcc9-7454-f392-fd94",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "636d-ebe5-9f04-0ae3",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 34
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": ".38 Revolver",
+                "id": "ee7c-7fee-4dc7-53b7",
+                "collective": false,
+                "hidden": false,
+                "targetId": "aeb7-e632-261d-d843",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "56b6-7d61-77cc-4da0",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "56b6-7d61-77cc-4da0",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "4523-0140-7729-8ae9",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Armor", "id": "9ba6-d0b0-b6ca-cfeb", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {"name": "Melee Weapons", "id": "ba5a-681c-a3e0-5eae", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {
+                "name": "Ranged Weapons",
+                "id": "4523-0140-7729-8ae9",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "ee7c-7fee-4dc7-53b7",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Special Items", "id": "4955-87c5-af39-dbae", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Andrew",
+        "id": "61c8-3b23-3066-3c48",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Neutral", "id": "c073-98f3-19b3-1d84", "hidden": false, "primary": false, "targetId": "a184-b0a1-ca0d-b36f"},
+          {"name": "Prisoners", "id": "7992-1138-4e37-7735", "hidden": false, "primary": false, "targetId": "a9fe-f760-9605-75d6"},
+          {"name": "New CategoryLink", "id": "0f31-828a-4354-e418", "hidden": false, "primary": true, "targetId": "7aaa-f540-43d6-81de"}
+        ],
+        "constraints": [
+          {
+            "id": "7f03-304c-48a6-ca11",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 26}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "e127-54be-b036-f6ac",
+            "collective": false,
+            "hidden": false,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "9064-b1b7-2121-dedf",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Andrew",
+            "id": "90d2-c799-2326-b326",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Runner", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "2Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "4", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X/-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Prisoner", "id": "ea9c-510b-d39e-6512", "hidden": false}],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "5a73-8a03-4646-7599",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "59d9-916d-47c3-3fe7",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 26
+              }
+            ],
+            "entryLinks": [
+              {"name": "Armor", "id": "a166-edda-90f6-999e", "collective": false, "hidden": false, "targetId": "ae2c-f939-ccd5-108a", "type": "selectionEntryGroup"},
+              {"name": "Melee Weapons", "id": "ca77-33b5-3085-3195", "collective": false, "hidden": false, "targetId": "e8e1-137d-8a53-a1fd", "type": "selectionEntryGroup"},
+              {
+                "name": "Ranged Weapons",
+                "id": "549d-31f6-af5d-3901",
+                "collective": false,
+                "hidden": false,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "1627-6127-c02f-4f8c",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {"name": "Special Items", "id": "1383-3fe3-1473-e7aa", "collective": false, "hidden": false, "targetId": "8a02-d9d8-d10a-0ca2", "type": "selectionEntryGroup"},
+              {
+                "name": "Marlin XT-17R",
+                "id": "1627-6127-c02f-4f8c",
+                "collective": false,
+                "hidden": false,
+                "targetId": "5cd1-19ae-0a6c-fb08",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "c959-92b2-9d57-10e5",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "c959-92b2-9d57-10e5",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "549d-31f6-af5d-3901",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

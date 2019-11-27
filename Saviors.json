@@ -1,0 +1,1857 @@
+{
+  "catalogue": {
+    "name": "Saviors",
+    "id": "900d-b5c7-ff7d-49fc",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "f046-8736-7a7e-93d7",
+    "gameSystemRevision": 2,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "selectionEntries": [
+      {
+        "name": "Group Special Rules",
+        "id": "928e-764a-7b21-761b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Alignment: Ruthless", "id": "8b91-4fca-69c2-c8f6", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"}],
+        "constraints": [
+          {
+            "id": "1d12-afa6-164f-cf6e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "333d-2a00-d394-d191",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 0}],
+        "rules": [
+          {
+            "name": "Reputation",
+            "id": "1b89-515c-6ecd-c89e",
+            "description": "Each time a Saviors model or friendly Follower removes an enemy Survivor as a casualty, or searches a Supply token, roll 1Black. On a Shield, add 1SP to the Saviors' pool.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Negan, Bad Mother******",
+        "id": "db9c-8a0d-ea7b-c880",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Ruthless", "id": "b510-ef37-ded0-c669", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "Bruiser", "id": "4e1d-ea16-3456-4483", "hidden": false, "primary": true, "targetId": "1632-3305-8ec4-ecf2"},
+          {"name": "Saviors", "id": "8741-91bc-9f9c-db3f", "hidden": false, "primary": false, "targetId": "7c85-eb9c-ed89-fb14"},
+          {"name": "Negan", "id": "112b-77ea-8dcb-acd0", "hidden": false, "primary": false, "targetId": "11a1-5c80-932a-3a02"}
+        ],
+        "constraints": [
+          {
+            "id": "51e6-8a73-812a-5c03",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 70}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "417a-89f4-883f-5617",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "5a77-3262-03b1-af67",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "2f66-aa8b-0e60-c179",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "infoLinks": [{"name": "Boss", "id": "01d2-59b0-8c19-7892", "hidden": false, "targetId": "4bcf-b79d-278c-0223", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Negan, Bad Mother******",
+            "id": "a81c-29b2-925c-bc8a",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Bruiser", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Blue", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1Blue", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "6", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "1White/1White", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Here's Negan! (Special Order)",
+            "id": "99a0-826e-c82a-2657",
+            "description": "If one or more enemy Survivors are removed from play as a result of Negan's melee attack roll, Negan may immediately give a +1 Action token to any friendly Saviors within 3\", at a cost of 1SP per model.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "8270-36ba-78aa-7009",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "56b0-8d5e-465e-b204",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 70
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Armor",
+                "id": "5678-73ec-6fea-824d",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Melee Weapons",
+                "id": "20b7-b5a8-ead2-fa72",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "8c52-3f0d-d15d-829b",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "ae7d-9c7e-e61f-e58c",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "3f5a-0392-fda3-dabe",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Special Items",
+                "id": "a77a-e722-4382-8861",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Springfield M1903",
+                "id": "3f5a-0392-fda3-dabe",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "7628-71d8-8eb1-42e9",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "c04a-fdf0-860c-1e85",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "c04a-fdf0-860c-1e85",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "ae7d-9c7e-e61f-e58c",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Lucille",
+                "id": "8c52-3f0d-d15d-829b",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "cef2-b6a2-8688-400c",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 0}],
+                "infoLinks": [{"name": "Bludgeon", "id": "fadc-2eaa-c386-1a07", "hidden": false, "targetId": "c050-a7e4-2e56-0cf1", "type": "rule"}],
+                "modifiers": [
+                  {
+                    "field": "cef2-b6a2-8688-400c",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "20b7-b5a8-ead2-fa72",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Lucille",
+                    "id": "d3c0-c132-b886-af6b",
+                    "hidden": false,
+                    "typeId": "d42c-7da6-84ea-bbd3",
+                    "typeName": "Melee Weapon",
+                    "characteristics": [
+                      {"name": "Attack Roll", "$text": "2White", "typeId": "84c3-eb7b-1a01-99c6"},
+                      {"name": "Special Rules", "typeId": "a811-f6c5-34bc-5f90"},
+                      {"name": "Keywords", "$text": "Bludgeon", "typeId": "c6ce-a20c-5806-fc59"},
+                      {"name": "Noise / Mayhem", "typeId": "35d4-25bc-80cb-6f59"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tara",
+        "id": "686d-7fec-bc93-c353",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Ruthless", "id": "207e-1c27-6843-c32a", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "Saviors", "id": "f57b-4d11-4cfa-aad1", "hidden": false, "primary": false, "targetId": "7c85-eb9c-ed89-fb14"},
+          {"name": "New CategoryLink", "id": "ee03-c8ca-24e0-2fd2", "hidden": false, "primary": true, "targetId": "7aaa-f540-43d6-81de"}
+        ],
+        "constraints": [
+          {
+            "id": "62cb-700a-d3b3-9a0a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 36}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "4870-8fbd-2271-6e19",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "5c28-ffed-b6c5-17c9",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "infoLinks": [{"name": "Multiple Attacks (X)", "id": "4f7a-ad60-261b-aa0d", "hidden": false, "targetId": "d84c-8293-2cb1-ed6c", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Tara",
+            "id": "d91f-5084-fe84-0a49",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Runner", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1White", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1Blue", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "4", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X/-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Multiple Attacks (2)", "id": "2eb3-80c4-e64a-afb2", "hidden": false}, {"name": "Stab!", "id": "59f4-9ba8-6506-3018", "hidden": false}],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "c658-66a7-1062-0ed4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "ab24-66da-f672-5ece",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 36
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Armor",
+                "id": "d2c5-bbbc-7d27-48cf",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Melee Weapons",
+                "id": "c512-8b1a-99bf-4d5d",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "fe64-7964-c7fc-4c3c",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "6d4e-3f3c-22b2-4397",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Special Items",
+                "id": "7633-ce52-6148-51e4",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Knife",
+                "id": "fe64-7964-c7fc-4c3c",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e1c4-2bd3-01d3-0fdd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "7d76-2728-ac02-65dd",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "7d76-2728-ac02-65dd",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "c512-8b1a-99bf-4d5d",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "John",
+        "id": "3df6-1764-e628-a3c4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Ruthless", "id": "f180-eec8-5abb-99c3", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "New CategoryLink", "id": "e386-0c9e-0ff4-37fb", "hidden": false, "primary": true, "targetId": "1632-3305-8ec4-ecf2"},
+          {"name": "Saviors", "id": "ab97-40d0-393d-7dd6", "hidden": false, "primary": false, "targetId": "7c85-eb9c-ed89-fb14"}
+        ],
+        "constraints": [
+          {
+            "id": "699f-17e6-e544-faaa",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 35}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "dbaa-13c6-41f9-d76d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "29a7-5e08-8c45-7a49",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "infoLinks": [{"name": "Fearless", "id": "826e-2d39-364b-e107", "hidden": false, "targetId": "2585-81e6-c7f3-226d", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "John",
+            "id": "c6db-e26c-1b38-cecc",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Bruiser", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1White", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White, 1Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "5", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X/-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "9d81-0419-0e4f-5674",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "1a31-7c56-4860-46be",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 35
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Armor",
+                "id": "2081-89a5-d655-fa17",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Melee Weapons",
+                "id": "32fb-6e1b-146d-52a6",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "00d8-3b1c-8a5c-0edb",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "dc99-0d8b-891e-961d",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Special Items",
+                "id": "9407-c82b-3b21-7024",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Crowbar",
+                "id": "00d8-3b1c-8a5c-0edb",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "cb36-3dab-6233-2e67",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "2bea-d436-7201-fc61",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "2bea-d436-7201-fc61",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "32fb-6e1b-146d-52a6",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dwight",
+        "id": "615c-6eb2-a0ea-1ab1",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Neutral", "id": "bd69-f9c7-2675-a390", "hidden": false, "primary": false, "targetId": "a184-b0a1-ca0d-b36f"},
+          {"name": "Runner", "id": "2356-13de-7597-150b", "hidden": false, "primary": true, "targetId": "7aaa-f540-43d6-81de"},
+          {"name": "Saviors", "id": "c445-b951-5f75-98be", "hidden": false, "primary": false, "targetId": "7c85-eb9c-ed89-fb14"}
+        ],
+        "constraints": [
+          {
+            "id": "a2fa-e132-ad85-3f28",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 40}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "b0a7-7f7e-e5af-f239",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "8501-914a-57fa-c683",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "infoLinks": [{"name": "Tread Lightly", "id": "4913-a992-c849-e9e5", "hidden": false, "targetId": "02d2-c097-d272-4ecb", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Dwight",
+            "id": "fefe-3b3b-f20d-c290",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Runner", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1White", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "4", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "1Red/1Red", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "ec62-44fe-d156-bdc0",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "af57-e5f0-9fc1-5d6e",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 40
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Armor",
+                "id": "4976-8408-56c3-b8fb",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Melee Weapons",
+                "id": "a30c-2fb5-d698-9598",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "738f-7c4c-ba95-1b30",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "863e-6fb7-f83d-b93f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "4ded-4940-f08e-b3bd",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Special Items",
+                "id": "dd99-077c-3bf2-b9e1",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Crossbow",
+                "id": "4ded-4940-f08e-b3bd",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6b11-4abb-3b2e-f725",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "4fd6-9d45-dc5f-1e75",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "4fd6-9d45-dc5f-1e75",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "863e-6fb7-f83d-b93f",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Knife",
+                "id": "738f-7c4c-ba95-1b30",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e1c4-2bd3-01d3-0fdd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "65f4-d738-5d9c-d481",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "65f4-d738-5d9c-d481",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "a30c-2fb5-d698-9598",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Laura",
+        "id": "f262-2815-7315-1c5f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Ruthless", "id": "572a-4049-200a-aaf8", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "Tactician", "id": "48d1-0c93-db0d-3c92", "hidden": false, "primary": true, "targetId": "b33e-e6d0-05ba-26ce"},
+          {"name": "Saviors", "id": "875e-0567-dc9e-42d0", "hidden": false, "primary": false, "targetId": "7c85-eb9c-ed89-fb14"}
+        ],
+        "constraints": [
+          {
+            "id": "06bc-c84d-3864-fc88",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 38}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "1f24-099f-d711-033d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "cfdd-84ee-4871-449d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Laura",
+            "id": "1420-38fa-d30e-faff",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Tactician", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Blue", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "3", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X/-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Inventive", "id": "6cfd-82c9-0f82-5b64", "description": "Laura may discard a Supply counter to add 1White to any Attack roll.", "hidden": false}],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "c9a2-c3f8-2767-bf91",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "36ff-c5e0-0882-2cad",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 38
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Armor",
+                "id": "4d3a-169b-9b59-6994",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Melee Weapons",
+                "id": "4918-c85c-acdb-4a65",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "9cb6-e622-3e77-a809",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "3c9d-f8d0-60a3-c0a2",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Special Items",
+                "id": "ec82-8677-49fe-2a99",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "M16 Assault Rifle",
+                "id": "3c9d-f8d0-60a3-c0a2",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "b0e1-8732-0f34-0843",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "b136-f5ab-0171-4d91",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "b136-f5ab-0171-4d91",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "9cb6-e622-3e77-a809",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sherry",
+        "id": "a351-6f97-5193-eb70",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "2123-4a27-d55d-374c", "hidden": false, "primary": true, "targetId": "4eb2-d49f-4b22-dd86"},
+          {"name": "Alignment: Neutral", "id": "dbee-520f-8cf7-25a5", "hidden": false, "primary": false, "targetId": "a184-b0a1-ca0d-b36f"},
+          {"name": "Saviors", "id": "4ce2-81e9-ea11-06bb", "hidden": false, "primary": false, "targetId": "7c85-eb9c-ed89-fb14"}
+        ],
+        "constraints": [
+          {
+            "id": "d9fa-bdd8-684b-7454",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 26}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "c775-7da6-43a9-edfe",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "1fcb-c353-84a5-4ebd",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Sherry",
+            "id": "c341-4b87-90e7-7a18",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Support", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "3", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X/1White", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "1edc-5424-7175-efae",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "bd01-ae8d-9e8b-9aef",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 26
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Armor",
+                "id": "7036-05cb-19ab-e94c",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Melee Weapons",
+                "id": "1289-32f1-046d-6e7a",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "1b8c-83f0-2d5e-9a0a",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "87bf-a6a3-0946-cb7f",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Special Items",
+                "id": "1014-fbad-dc17-886b",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "9a7f-457e-7197-5f45",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "0dba-1296-0fb6-e398",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "9mm Pistol",
+                "id": "87bf-a6a3-0946-cb7f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "329b-bd83-bbe9-bd52",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "0bde-2cdd-2789-5b23",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "0bde-2cdd-2789-5b23",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "1b8c-83f0-2d5e-9a0a",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Backpack",
+                "id": "0dba-1296-0fb6-e398",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "23a1-04f5-c16c-e811",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "22d4-6f10-fa75-525f",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "22d4-6f10-fa75-525f",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "1014-fbad-dc17-886b",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Negan, Savior Leader",
+        "id": "3847-2188-25da-60d1",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Ruthless", "id": "f32d-eb6f-f75e-7279", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "Bruiser", "id": "6f0b-5ea9-1cc0-e107", "hidden": false, "primary": true, "targetId": "1632-3305-8ec4-ecf2"},
+          {"name": "Saviors", "id": "eefa-a769-5af6-3d28", "hidden": false, "primary": false, "targetId": "7c85-eb9c-ed89-fb14"},
+          {"name": "Negan", "id": "e486-8b2a-0df9-a159", "hidden": false, "primary": false, "targetId": "11a1-5c80-932a-3a02"}
+        ],
+        "constraints": [
+          {
+            "id": "2504-b989-4ed0-ed7e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 70}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "30f8-62ac-d5ba-f16f",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "889c-0bbe-6b96-8db6",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "a320-2ebe-bc2d-d64e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "infoLinks": [{"name": "Egotist", "id": "adcd-4f7e-a6e2-3f9d", "hidden": false, "targetId": "90ec-7438-4aaf-a01b", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Negan, Savior Leader",
+            "id": "e00a-0aea-a768-fee4",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Tactician", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Blue", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "2White", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "8", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "1White/1Red", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Rule Through Fear",
+            "id": "e321-2fb7-21e5-4895",
+            "description": "As a Special Action, Negan may replace one friendly model in his Kill Zone with a Prone Walker. Then, distribute 1Blue +1 Action tokens amongst any friendly Saviors in play (including Negan himself).",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "66f8-53de-eb8f-1ef8",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "f1b8-7663-52d8-334f",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 70
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Armor",
+                "id": "a8d4-635f-2527-b085",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "ec3d-4a63-9fa9-c35f",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "0ce4-0b0c-fa90-68ba",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Melee Weapons",
+                "id": "eb96-f478-5a02-89b7",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "96fd-ccee-11f3-24ed",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "d6e0-dffe-c591-e8c7",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "2f51-52a5-6f33-b8a8",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Special Items",
+                "id": "0f0e-4463-f878-5e58",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Grenade",
+                "id": "2f51-52a5-6f33-b8a8",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a7e-85ec-6b38-1299",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "87e0-7fb4-e8d0-b756",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "87e0-7fb4-e8d0-b756",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "d6e0-dffe-c591-e8c7",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Leather Jacket",
+                "id": "0ce4-0b0c-fa90-68ba",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "2aa0-4fe1-a3bf-57df",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "7f63-8bc0-c5be-9ede",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "7f63-8bc0-c5be-9ede",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "a8d4-635f-2527-b085",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Lucille",
+                "id": "96fd-ccee-11f3-24ed",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "constraints": [
+                  {
+                    "id": "a5cb-00e0-6fbb-4017",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "a5cb-00e0-6fbb-4017",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "eb96-f478-5a02-89b7",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "Lucille",
+                    "id": "9d38-4905-74ca-8423",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {
+                        "id": "59dc-58eb-3e2d-6994",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 0}],
+                    "infoLinks": [{"name": "Bludgeon", "id": "9952-b694-b80a-c0f1", "hidden": false, "targetId": "c050-a7e4-2e56-0cf1", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Lucille",
+                        "id": "d8bd-d114-ce73-ae6d",
+                        "hidden": false,
+                        "typeId": "d42c-7da6-84ea-bbd3",
+                        "typeName": "Melee Weapon",
+                        "characteristics": [
+                          {"name": "Attack Roll", "$text": "2White", "typeId": "84c3-eb7b-1a01-99c6"},
+                          {"name": "Special Rules", "typeId": "a811-f6c5-34bc-5f90"},
+                          {"name": "Keywords", "$text": "Bludgeon", "typeId": "c6ce-a20c-5806-fc59"},
+                          {"name": "Noise / Mayhem", "typeId": "35d4-25bc-80cb-6f59"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Infected Lucille",
+                    "id": "35dd-a587-5756-ceb8",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "upgrade",
+                    "constraints": [
+                      {
+                        "id": "9024-af81-2ca8-472c",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 6}],
+                    "profiles": [
+                      {
+                        "name": "Infected Lucille",
+                        "id": "ee2f-0812-ef1c-bd8f",
+                        "hidden": false,
+                        "typeId": "d42c-7da6-84ea-bbd3",
+                        "typeName": "Melee Weapon",
+                        "characteristics": [
+                          {"name": "Attack Roll", "$text": "2White", "typeId": "84c3-eb7b-1a01-99c6"},
+                          {"name": "Special Rules", "typeId": "a811-f6c5-34bc-5f90"},
+                          {"name": "Keywords", "$text": "Bludgeon", "typeId": "c6ce-a20c-5806-fc59"},
+                          {"name": "Noise / Mayhem", "typeId": "35d4-25bc-80cb-6f59"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Bludgeon",
+                        "id": "11cd-6c50-cb0f-be94",
+                        "description": "If an attack roll with this weapon includes any !, any Survivor wounded by this attack is Bitten.",
+                        "hidden": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

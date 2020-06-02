@@ -1,0 +1,620 @@
+{
+  "catalogue": {
+    "name": "Hilltop",
+    "id": "e0d1-6daa-8aa7-7dcc",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "f046-8736-7a7e-93d7",
+    "gameSystemRevision": 4,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "selectionEntries": [
+      {
+        "name": "Jesus",
+        "id": "30bb-8042-ee4a-91b6",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Lawful", "id": "d72c-bbde-0667-ee88", "hidden": false, "primary": false, "targetId": "03f7-28fe-397f-08c7"},
+          {"name": "New CategoryLink", "id": "d73e-2e8e-8039-1096", "hidden": false, "primary": true, "targetId": "7aaa-f540-43d6-81de"},
+          {"name": "Hilltop", "id": "157a-cdb7-9ede-6977", "hidden": false, "primary": false, "targetId": "7b33-b27c-c03b-d09d"}
+        ],
+        "constraints": [
+          {
+            "id": "5d27-07f0-272f-ba06",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 42}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "e4e4-af09-9676-6645",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Jesus",
+            "id": "8c5a-578d-9dc6-3869",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Runner", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Blue", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1White", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White,1Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "5", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "1Red/1White", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Martial Artist",
+            "id": "93ab-aaa1-8cba-fdcf",
+            "description": "When Jesus has no Mlee Weapon equipped, he gains the Multiple Attacks (2) keyword, and those attacks gain the Stun keyword.",
+            "hidden": false
+          },
+          {
+            "name": "Lightning Reflexes",
+            "id": "eea1-4edd-9c52-d077",
+            "description": "Enemy Survivors must deduct 1 success from their ranged attack rolls when targeting Jesus. If the attack fails to wound, Jesus may immediately move up to 2\", treating this move as a free, out-of-sequence Sneak.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "1fbf-1289-2c7a-07ac",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "fc40-4d2b-7e68-8649",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 42
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Armor",
+                "id": "cbf4-e04b-5425-5257",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Melee Weapons",
+                "id": "62c6-227d-b659-87a7",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "7ae5-c783-9305-359e",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Special Items",
+                "id": "a4e7-38a0-9e67-1097",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "9a7f-457e-7197-5f45",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "3c8e-5b6c-349b-238a",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Leather Coat",
+                "id": "3c8e-5b6c-349b-238a",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "d241-4fef-1379-6891",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "448c-5b78-19eb-59d9",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "448c-5b78-19eb-59d9",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "a4e7-38a0-9e67-1097",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Maggie, Leader of Hilltop",
+        "id": "f94b-32cc-5dcd-17d2",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Lawful", "id": "ec78-392c-bacc-659e", "hidden": false, "primary": false, "targetId": "03f7-28fe-397f-08c7"},
+          {"name": "Hilltop", "id": "0a5f-326b-f6a0-9802", "hidden": false, "primary": false, "targetId": "7b33-b27c-c03b-d09d"},
+          {"name": "New CategoryLink", "id": "e1ef-0a51-8cc7-62fc", "hidden": false, "primary": true, "targetId": "b33e-e6d0-05ba-26ce"}
+        ],
+        "constraints": [
+          {
+            "id": "94c5-963f-9691-4fbd",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 55}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "6557-1a7f-a130-aec1",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Boss", "id": "6934-0c99-2279-ad7a", "hidden": false, "targetId": "4bcf-b79d-278c-0223", "type": "rule"},
+          {"name": "Someone to Fight For (X)", "id": "1b2e-73cf-a1e9-dd51", "hidden": false, "targetId": "cff8-cad1-c64e-0ee0", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Maggie, Leader of Hilltop",
+            "id": "a00f-8f94-7105-af8e",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Tactician", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1White", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1White", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White,1Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "5", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "1White/1Red", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Remember Your Training (Special Order)",
+            "id": "e914-1b2b-5edd-83e7",
+            "description": "Maggie may give 1Red to friendly Hilltop models in line of sight, at a cost of 1SP per 1Red. No more than one die may be awarded per model. Those models may add the bonus die to a single attack or defense roll in melee. Any unused dice are lost at the end of the round.",
+            "hidden": false
+          },
+          {
+            "name": "Widow",
+            "id": "80cf-52be-50be-59dc",
+            "description": "Maggie has the Fearless keyword as long as there is no friendly Glenn model in play.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "7c42-e620-c7ab-0cf2",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "f513-df0f-c3c2-7977",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 55
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Armor",
+                "id": "375b-2602-49a4-26f7",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Melee Weapons",
+                "id": "e9a0-b636-a7f8-ab35",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "bbe8-a4e9-1d85-a064",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "f23a-51d9-c560-7f2b",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "1d42-d395-d8fb-67ca",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Special Items",
+                "id": "9ab6-3a43-7100-a427",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Knife",
+                "id": "bbe8-a4e9-1d85-a064",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e1c4-2bd3-01d3-0fdd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "a96e-887e-396b-23ea",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "a96e-887e-396b-23ea",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "e9a0-b636-a7f8-ab35",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Steyr Aug A3",
+                "id": "1d42-d395-d8fb-67ca",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "46b9-e08e-6b4f-c42c",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "0c47-046b-b30f-1f68",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "0c47-046b-b30f-1f68",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "f23a-51d9-c560-7f2b",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sophia, Surrogate Daughter",
+        "id": "34eb-bfdc-9692-e9c8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Lawful", "id": "7e33-6c09-4d42-281f", "hidden": false, "primary": false, "targetId": "03f7-28fe-397f-08c7"},
+          {"name": "Hilltop", "id": "80a6-cd60-7661-cc3d", "hidden": false, "primary": false, "targetId": "7b33-b27c-c03b-d09d"},
+          {"name": "New CategoryLink", "id": "3953-8b78-8e13-7286", "hidden": false, "primary": true, "targetId": "4eb2-d49f-4b22-dd86"}
+        ],
+        "constraints": [
+          {
+            "id": "e729-04d9-8340-c77b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 12}],
+        "infoLinks": [{"name": "Blood Ties (X)", "id": "968a-3415-b2af-eff3", "hidden": false, "targetId": "ce15-eb8c-2fb2-07c9", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Sophia, Surrogate Daughter",
+            "id": "8ed5-5403-7b83-0467",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Tactician", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "-", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "3", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X/-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Surrogate",
+            "id": "c117-2468-6b5b-75c6",
+            "description": "If a friendly Maggie Greene model is the target of Sophia's Encourage strategy, Maggie activates as soon as Sophia's activation is complete.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "d71f-8fbc-c1f1-9863",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "8c5f-0acd-1016-5039",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 12
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Armor",
+                "id": "3b61-4286-f19a-05c1",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Melee Weapons",
+                "id": "51ae-6459-da66-8328",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "96e9-05f0-f4fb-ff6b",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Special Items",
+                "id": "60b2-4e9a-f742-66a7",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Group Special Rules",
+        "id": "7d45-32c6-8204-93f8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "3c44-0fa5-b0a3-69b8",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "a6ce-98a4-c6d4-8338",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 0}],
+        "rules": [
+          {
+            "name": "Defensive Formation",
+            "id": "0668-1b1a-3c79-1407",
+            "description": "Models from the Hilltop Faction may reroll blanks when taking Defense rolls while there is at least one other friendly Hilltop model in their Kill Zone. \n\nFurthermore, each time a Hilltop model scores three or more ! as part of a Defense roll, add 1SP to the Strategy Pool for the round.",
+            "hidden": false
+          }
+        ]
+      }
+    ]
+  }
+}

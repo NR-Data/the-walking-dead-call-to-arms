@@ -1,0 +1,1369 @@
+{
+  "catalogue": {
+    "name": "The Whisperers",
+    "id": "c273-5aec-f616-572a",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "f046-8736-7a7e-93d7",
+    "gameSystemRevision": 4,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "selectionEntries": [
+      {
+        "name": "Group Special Rules",
+        "id": "1ae9-f700-f030-3872",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "f359-a85d-fbd9-3ffc",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "8760-3fdd-4cc9-7f81",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "min",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 0}],
+        "infoLinks": [{"name": "Minion", "id": "921c-c247-3ed7-5576", "hidden": false, "targetId": "94b0-be1c-40e1-4751", "type": "rule"}],
+        "rules": [
+          {
+            "name": "Shunned by Society",
+            "id": "eea5-70ed-e0c9-3976",
+            "description": "Whisperers cannot be chosen as Allies by other Factions. Only Neutral models may be chosen as Allies in a Whisperers group.",
+            "hidden": false
+          },
+          {
+            "name": "Skin Suit",
+            "id": "b58c-b99b-55d0-f401",
+            "description": "A model with this rule gains the Masked Scent special rule, and treats all Walkers in its Kill Zone as having the Bodyguard (this model) keyword, counting them as friendly models for the purpose of the Bodyguard rule. In addition, this model may Sneak through Walkers as though they weren't there, and may spend 1SP whenever a Masked Scent roll is failed to force the Walker to stop 1\" away. This model may not purchase other Armor equipment.",
+            "hidden": false
+          },
+          {
+            "name": "One of the Herd",
+            "id": "0013-b1b5-4c75-f7e6",
+            "description": "At the start of the game, after deployment, the Whisperers player takes one extra Herd and places it anywhere within a Walker Zone, no closer than 8\" to an enemy Survivor. The Whisperers player may then assign a single Whisperer model with the Minion keyword to each Herd base in play, replacing one of the Walker models on the base with the Minion model. No more than one Minion can occupy a Herd base at any one time. If both players are Whisperers, take it in turns to choose a Herd and place a Minion.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Alpha, Leader of the Whisperers",
+        "id": "938c-3ea9-674a-a209",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "New CategoryLink", "id": "6fc8-78e5-6dce-3ee6", "hidden": false, "primary": true, "targetId": "b33e-e6d0-05ba-26ce"},
+          {"name": "Alignment: Ruthless", "id": "758f-9587-a4ae-8e9b", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"}
+        ],
+        "constraints": [
+          {
+            "id": "6376-48e1-3a4e-9859",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 58}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "b61b-1be8-a521-f8a3",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "The Whispers...", "id": "c44c-caf5-2126-a6f7", "hidden": false, "targetId": "d0be-3f22-24ac-8cd6", "type": "rule"},
+          {"name": "Egotist", "id": "6583-00b2-3162-c569", "hidden": false, "targetId": "90ec-7438-4aaf-a01b", "type": "rule"},
+          {"name": "Fearless", "id": "880e-a14d-4bd9-01ec", "hidden": false, "targetId": "2585-81e6-c7f3-226d", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Alpha, Leader of the Whisperers",
+            "id": "2bf9-3e23-4a05-3657",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Tactician", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1White", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1Blue", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "5", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "2Red/X", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Rusty Old Sawed-Off",
+            "id": "250d-dbee-6bc0-0ef8",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "profiles": [
+              {
+                "name": "Rusty Old Sawed-Off",
+                "id": "7475-61a6-e013-bc21",
+                "hidden": false,
+                "typeId": "3560-a8a8-6a4e-2aa2",
+                "typeName": "Ranged Weapon",
+                "characteristics": [
+                  {"name": "Attack Roll Short", "$text": "1Red", "typeId": "5e67-d6ba-ff65-695d"},
+                  {"name": "Attack Roll Medium", "$text": "X", "typeId": "f3e5-c666-6d43-df23"},
+                  {"name": "Attack Roll Long", "$text": "X", "typeId": "1376-9535-490f-fce4"},
+                  {"name": "Special Rules", "$text": "Handgun, Shotgun, Unreliable, Mayhem.", "typeId": "8821-27ea-b643-76c2"},
+                  {"name": "Keywords", "typeId": "2c12-568c-52a4-db62"},
+                  {"name": "Noise / Mayhem", "typeId": "4783-fd91-26e1-6d38"}
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "20eb-ed00-52a2-734a",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "6bb9-8133-c414-b073",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 58
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Melee Weapons",
+                "id": "7ce6-5e90-a610-3c31",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "eb54-8bc3-9814-2801",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "1405-1cfc-5e7f-4a36",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "1405-1cfc-5e7f-4a36",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Special Items",
+                "id": "9ede-7594-3265-992e",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Knife",
+                "id": "eb54-8bc3-9814-2801",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e1c4-2bd3-01d3-0fdd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "3bdc-fc2b-029c-5ebe",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "3bdc-fc2b-029c-5ebe",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "model",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "e846-38ca-f2fb-409b",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "infoLinks": [{"name": "Skin Suit", "id": "3d31-3e37-49d8-4086", "hidden": false, "targetId": "8182-7398-52e4-be21", "type": "rule"}]
+          }
+        ]
+      },
+      {
+        "name": "Lydia",
+        "id": "3803-10f8-bee4-b163",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Neutral", "id": "24eb-3a76-60c3-c35e", "hidden": false, "primary": false, "targetId": "a184-b0a1-ca0d-b36f"},
+          {"name": "New CategoryLink", "id": "776b-8044-ba4e-8a8a", "hidden": false, "primary": true, "targetId": "7aaa-f540-43d6-81de"}
+        ],
+        "constraints": [
+          {
+            "id": "8b32-ec5d-4ede-c742",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 36}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "15b3-a985-eebc-9098",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [{"name": "Rebellious", "id": "55ff-9076-606c-9918", "hidden": false, "targetId": "b745-4444-7471-acf1", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Lydia",
+            "id": "0f26-b2a4-ec39-8845",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Runner", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1White", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "3", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X/1Red", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "08c7-0494-f4ca-6e3f",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "25b8-7644-694f-a88c",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 36
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Melee Weapons",
+                "id": "b455-bcce-3336-83e3",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "98a1-1f44-5ead-b2de",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "2c58-e75d-3ae1-ec30",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "19fc-c911-8596-9e16",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Special Items",
+                "id": "ff26-ca1e-7af7-3ff9",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Knife",
+                "id": "98a1-1f44-5ead-b2de",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e1c4-2bd3-01d3-0fdd",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "bb85-79d5-429b-12b3",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "bb85-79d5-429b-12b3",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "model",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "e846-38ca-f2fb-409b",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "9mm Pistol",
+                "id": "19fc-c911-8596-9e16",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "329b-bd83-bbe9-bd52",
+                "type": "selectionEntry",
+                "constraints": [
+                  {
+                    "id": "2c1d-880d-edbb-7917",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "modifiers": [
+                  {"field": "0705-c536-f372-c2d0", "type": "set", "value": 0},
+                  {
+                    "field": "2c1d-880d-edbb-7917",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "2c58-e75d-3ae1-ec30",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Armor",
+                "id": "1ae4-99f0-0605-dc30",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "ec3d-4a63-9fa9-c35f",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "c269-434c-e327-bf2f",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Skin Suit",
+                "id": "c269-434c-e327-bf2f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 10}],
+                "infoLinks": [{"name": "Skin Suit", "id": "8420-2f6a-98af-1235", "hidden": false, "targetId": "8182-7398-52e4-be21", "type": "rule"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Beta",
+        "id": "1a85-cf0d-c8d3-503c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Ruthless", "id": "3850-a0bc-8e06-b02e", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "New CategoryLink", "id": "5514-9d63-0bd5-cf0c", "hidden": false, "primary": true, "targetId": "1632-3305-8ec4-ecf2"}
+        ],
+        "constraints": [
+          {
+            "id": "ae2f-f365-1495-e431",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 70}],
+        "entryLinks": [
+          {
+            "name": "Leader",
+            "id": "15bf-1ff1-0525-e7ea",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2bee-5b46-6bef-8581",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "The Whispers...", "id": "0390-80f4-d856-c341", "hidden": false, "targetId": "d0be-3f22-24ac-8cd6", "type": "rule"},
+          {"name": "Bodyguard (X)", "id": "6b30-aa2a-2452-643a", "hidden": false, "targetId": "b835-4f78-3c0a-5dee", "type": "rule"},
+          {"name": "Fear", "id": "e7b7-8dd1-34aa-7592", "hidden": false, "targetId": "0ce0-f4cf-89a9-1f9e", "type": "rule"},
+          {"name": "Masked Scent", "id": "e0b1-54e6-742b-3f46", "hidden": false, "targetId": "a5d7-049d-d04e-a7b4", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Beta",
+            "id": "c817-60f4-b4bb-971d",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Bruiser", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "2Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "-", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "3Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "8", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "-/1White", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Jolly Green Gi-",
+            "id": "994d-61b1-0d53-60b1",
+            "description": "When performing a melee attack against a Survivor with 6 or more starting Health, Beta may re-roll blanks.",
+            "hidden": false
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "58f6-b458-bf42-3497",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "51dc-1963-97a3-963b",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 70
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Melee Weapons",
+                "id": "9bb8-7cb3-24c0-5469",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "10ef-a549-26d5-da64",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "3500-9d7d-a78b-538e",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Special Items",
+                "id": "99d8-2f5d-90e0-2161",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "9a7f-457e-7197-5f45",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "70ea-e71b-7bb0-b5f2",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Armor",
+                "id": "f4c6-cf53-7f60-cb4e",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "ec3d-4a63-9fa9-c35f",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "03d9-a8ba-e23f-49b1",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Beta's Skin Mask",
+                "id": "70ea-e71b-7bb0-b5f2",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Beta's Skin Mask",
+                    "id": "c0c8-e5c2-3aa9-2cc9",
+                    "hidden": false,
+                    "typeId": "ba75-8ed9-edc3-b7f6",
+                    "typeName": "Special Items",
+                    "characteristics": [
+                      {"name": "Special Rules", "$text": "Beta may Sneak through Walkers as if they weren't there.", "typeId": "f83f-be9f-fcc5-abf5"},
+                      {"name": "Keywords", "typeId": "4d62-b2c0-a0c7-0a18"},
+                      {"name": "Noise / Mayhem", "typeId": "589a-5fe7-b416-6918"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Beta's Leather Coat",
+                "id": "03d9-a8ba-e23f-49b1",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Beta's Leather Coat",
+                    "id": "54e5-88c0-f206-e343",
+                    "hidden": false,
+                    "typeId": "ba75-8ed9-edc3-b7f6",
+                    "typeName": "Special Items",
+                    "characteristics": [
+                      {"name": "Special Rules", "$text": "Beta may re-roll blanks on Defense rolls against Melee attacks.", "typeId": "f83f-be9f-fcc5-abf5"},
+                      {"name": "Keywords", "typeId": "4d62-b2c0-a0c7-0a18"},
+                      {"name": "Noise / Mayhem", "typeId": "589a-5fe7-b416-6918"}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Beta's Knives",
+                "id": "10ef-a549-26d5-da64",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Beta's Knives",
+                    "id": "20ff-2d0b-9f40-32bb",
+                    "hidden": false,
+                    "typeId": "d42c-7da6-84ea-bbd3",
+                    "typeName": "Melee Weapon",
+                    "characteristics": [
+                      {"name": "Attack Roll", "$text": "1Red", "typeId": "84c3-eb7b-1a01-99c6"},
+                      {"name": "Special Rules", "$text": "Bulky, Multiple Attacks (3), Sharp.", "typeId": "a811-f6c5-34bc-5f90"},
+                      {"name": "Keywords", "typeId": "c6ce-a20c-5806-fc59"},
+                      {"name": "Noise / Mayhem", "typeId": "35d4-25bc-80cb-6f59"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Whisperer 1",
+        "id": "ad5a-058c-ac8e-1fb3",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Ruthless", "id": "afd0-53b1-1211-b826", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "New CategoryLink", "id": "586f-1ab8-d82c-0ff4", "hidden": false, "primary": true, "targetId": "4eb2-d49f-4b22-dd86"}
+        ],
+        "constraints": [
+          {
+            "id": "4a1a-1f4f-4e31-bf0a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 22}],
+        "infoLinks": [
+          {"name": "The Whispers...", "id": "c60d-3fa1-a60d-fcf0", "hidden": false, "targetId": "d0be-3f22-24ac-8cd6", "type": "rule"},
+          {"name": "Minion", "id": "b21d-8d22-0169-ffc3", "hidden": false, "targetId": "94b0-be1c-40e1-4751", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Whisperer 1",
+            "id": "4890-d364-c1c4-5ea4",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Support", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1White", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "3", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X.-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "f065-21fb-42dc-3cd7",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "d1cf-d436-9065-922f",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 22
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Melee Weapons",
+                "id": "c027-d0ff-2110-cfd5",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "818a-4002-849d-9215",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "deff-a792-b268-27aa",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Special Items",
+                "id": "fd8a-d894-6a76-4ae9",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Armor",
+                "id": "42e5-2d83-4442-57ad",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "ec3d-4a63-9fa9-c35f",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "8892-b94f-58b4-d76f",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Knife",
+                "id": "818a-4002-849d-9215",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e1c4-2bd3-01d3-0fdd",
+                "type": "selectionEntry",
+                "modifiers": [{"field": "0705-c536-f372-c2d0", "type": "set", "value": 0}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Skin Suit",
+                "id": "8892-b94f-58b4-d76f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "infoLinks": [{"name": "Skin Suit", "id": "7c7d-a31d-dd3b-6612", "hidden": false, "targetId": "8182-7398-52e4-be21", "type": "rule"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Whisperer 2",
+        "id": "dd54-aa2b-cb23-55d9",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Ruthless", "id": "2571-2aaa-6952-e20f", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "New CategoryLink", "id": "a8a7-edab-d578-fbe8", "hidden": false, "primary": true, "targetId": "1632-3305-8ec4-ecf2"}
+        ],
+        "constraints": [
+          {
+            "id": "f12b-cf88-92b5-3836",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 22}],
+        "infoLinks": [
+          {"name": "The Whispers...", "id": "9f33-a27b-dd93-d439", "hidden": false, "targetId": "d0be-3f22-24ac-8cd6", "type": "rule"},
+          {"name": "Minion", "id": "2bb8-ccf1-6e0b-48bd", "hidden": false, "targetId": "94b0-be1c-40e1-4751", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Whisperer 2",
+            "id": "7c11-414e-d3b0-7ec0",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Bruiser", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1White", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1Red", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "3", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X.-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "7898-f9d8-a11f-4314",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "17aa-4b0a-9e33-195c",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 22
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Melee Weapons",
+                "id": "9f47-1acb-08cc-6b0e",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "2478-2849-1590-9155",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "09a4-4773-d586-2a1c",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Special Items",
+                "id": "7114-103d-cc65-c0e2",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Armor",
+                "id": "b2b0-09e1-9d01-92d5",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "ec3d-4a63-9fa9-c35f",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "777b-276c-4ff1-67fd",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Knife",
+                "id": "2478-2849-1590-9155",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e1c4-2bd3-01d3-0fdd",
+                "type": "selectionEntry",
+                "modifiers": [{"field": "0705-c536-f372-c2d0", "type": "set", "value": 0}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Skin Suit",
+                "id": "777b-276c-4ff1-67fd",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "infoLinks": [{"name": "Skin Suit", "id": "0ce7-2f4d-ec4d-1dff", "hidden": false, "targetId": "8182-7398-52e4-be21", "type": "rule"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Whisperer 3",
+        "id": "54f4-16c3-722c-b152",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [
+          {"name": "Alignment: Ruthless", "id": "8f82-ff3f-075e-efdf", "hidden": false, "primary": false, "targetId": "f115-d6f7-b750-5f55"},
+          {"name": "New CategoryLink", "id": "9d75-e0cf-a5f8-d3d7", "hidden": false, "primary": true, "targetId": "7e4f-cf68-74a3-b58a"}
+        ],
+        "constraints": [
+          {
+            "id": "44e5-da8d-a412-6072",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "0705-c536-f372-c2d0", "value": 30}],
+        "infoLinks": [
+          {"name": "The Whispers...", "id": "dfe3-cbc9-74bf-f0db", "hidden": false, "targetId": "d0be-3f22-24ac-8cd6", "type": "rule"},
+          {"name": "Minion", "id": "debb-c866-455b-4d86", "hidden": false, "targetId": "94b0-be1c-40e1-4751", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Whisperer 3",
+            "id": "7260-3415-1285-c58e",
+            "hidden": false,
+            "typeId": "40e9-9288-6f65-70a9",
+            "typeName": "Character",
+            "characteristics": [
+              {"name": "Type", "$text": "Marksman", "typeId": "d9ce-b162-4bd7-6736"},
+              {"name": "Melee", "$text": "1Red", "typeId": "fc7e-dccd-5244-3798"},
+              {"name": "Shoot", "$text": "1White", "typeId": "b227-fd8f-ea1c-65f7"},
+              {"name": "Defense", "$text": "1Red", "typeId": "ca1d-2465-3eb7-9bd8"},
+              {"name": "Health", "$text": "3", "typeId": "5e5d-73d3-ba6a-8396"},
+              {"name": "SP", "$text": "X.-", "typeId": "cae4-668b-3f49-b130"}
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Upgrades",
+            "id": "d9fe-1b67-9558-4bd7",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "2ecc-0afb-061f-137f",
+                "field": "0705-c536-f372-c2d0",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 30
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Melee Weapons",
+                "id": "a304-565c-dbc8-921d",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e8e1-137d-8a53-a1fd",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "4f9c-993e-439e-104e",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "61f9-b452-00a5-b3ce",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Ranged Weapons",
+                "id": "a308-ce7a-8db8-1259",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "6461-e3e9-6745-0a3b",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "87c9-5f1f-65c7-96be",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "f62f-906e-5bcc-352a",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Special Items",
+                "id": "63bf-8055-2cbc-2954",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "8a02-d9d8-d10a-0ca2",
+                "type": "selectionEntryGroup"
+              },
+              {
+                "name": "Armor",
+                "id": "d2a1-3a58-bd68-86b7",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ae2c-f939-ccd5-108a",
+                "type": "selectionEntryGroup",
+                "modifiers": [
+                  {
+                    "field": "ec3d-4a63-9fa9-c35f",
+                    "type": "set",
+                    "value": 0,
+                    "conditions": [
+                      {
+                        "childId": "f090-aff7-6f6c-6caa",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "greaterThan",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Knife",
+                "id": "61f9-b452-00a5-b3ce",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "e1c4-2bd3-01d3-0fdd",
+                "type": "selectionEntry",
+                "modifiers": [{"field": "0705-c536-f372-c2d0", "type": "set", "value": 0}]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Skin Suit",
+                "id": "f090-aff7-6f6c-6caa",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "infoLinks": [{"name": "Skin Suit", "id": "1d40-1803-f593-69db", "hidden": false, "targetId": "8182-7398-52e4-be21", "type": "rule"}]
+              },
+              {
+                "name": "Whisperer Bow",
+                "id": "f62f-906e-5bcc-352a",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Whisperer Bow",
+                    "id": "5b0f-6e22-d564-a069",
+                    "hidden": false,
+                    "typeId": "3560-a8a8-6a4e-2aa2",
+                    "typeName": "Ranged Weapon",
+                    "characteristics": [
+                      {"name": "Attack Roll Short", "$text": "1Red", "typeId": "5e67-d6ba-ff65-695d"},
+                      {"name": "Attack Roll Medium", "$text": "X", "typeId": "f3e5-c666-6d43-df23"},
+                      {"name": "Attack Roll Long", "$text": "X", "typeId": "1376-9535-490f-fce4"},
+                      {"name": "Special Rules", "$text": "Reliable", "typeId": "8821-27ea-b643-76c2"},
+                      {"name": "Keywords", "typeId": "2c12-568c-52a4-db62"},
+                      {"name": "Noise / Mayhem", "typeId": "4783-fd91-26e1-6d38"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
